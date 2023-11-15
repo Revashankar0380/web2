@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+html{ scroll-behavior: smooth; }
+
+nav
+{
+      padding: 10px;
+      background: rgba(0,0,0,0.6);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+}
+.container 
+{
+  padding: 10px;
+  max-width: 1180px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  /*background: red;*/
+}
+
+#chk{ display: none; }
+
+
+.lab{ 
+    font-size: 30px; 
+    color: white; 
+    font-weight: 800; 
+    display: none;
+  }
+
+.logo { 
+    font-size: 36px; 
+    color: white; 
+    text-transform: uppercase; 
+      font-weight: 600;
+  }
+
+.ulist li 
+{
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+.ulist li a
+{
+   color: white;
+   text-transform: uppercase;          
+}
+
+/*-----------------------------------------------------------------------*/
+
+#home 
+{
+  width: 100%;
+  height: 100vh;
+  background: url(pics/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.brand 
+{
+  max-width: 800px;
+  width: 100%;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+/*  background: red;*/
+}
+
+.head_text
+{
+font-size: 3vw;
+color: white;
+letter-spacing: 2px;
+}
+
+.para { color: lightgrey; margin-top: 25px; }
+
+
+.btn
+{
+  padding: 15px 25px;
+  background: red;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+/*---------------------------------About-----------------------------*/
+#about{ padding: 50px 0px;
+  background:rgb(236 ,235, 243)
+}
+
+
+.about_brand{ 
+padding: 25px; 
+display: flex;
+flex-direction: column;
+align-items: center;
+/*background: green;*/
+}
+
+
+
+.bar { 
+width: 100%;
+height: 5px;
+background: lightgreen;
+margin: 25px 0;
+}
+
+.about_brand .head_text
+{
+font-size: 3vw;
+color: #333;
+letter-spacing: 2px;
+}
+
+
+.about_brand .btn
+{ background: lightgreen; }
+
+.about_grey
+{
+   background: grey;
+   padding: 50px;
+}
+
+.about_grey .container 
+{
+  padding: 10px;
+  max-width: 1180px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+/*  background: red;*/
+}
+
+.left
+{  
+width: calc(30% - 25px);
+padding: 10px;
+/*background: grey;*/
+text-align: center;
+}
+
+.right
+{  
+width: calc(70% - 25px);
+padding: 10px;
+text-align:justify;
+/*background: white;*/
+}
+
+
+
+/*--------------------------------------------------------------------------*/
+
+#portfolio
+{
+    padding: 50px;
+/*    background: green;*/
+}
+
+#portfolio .container , #team .container, #service .container,#contact .container
+{
+padding: 10px;
+max-width: 1180px;
+width: 100%;
+display: flex;
+justify-content: space-between;
+/*align-items: center;*/
+margin: auto;
+flex-wrap: wrap;
+}
+
+#portfolio .left .head_text{ color: #333; }
+#portfolio .bar{ background: #333; }
+
+
+#portfolio .right 
+{
+  width: calc(60% - 25px);
+  padding: 10px;
+}
+
+.port_menu
+{
+  display: flex;
+}
+
+.port_menu li{ padding: 10px 15px; list-style: none; border-radius: 15px; margin: 0 2px}
+
+.port_menu li a{ color: black; }
+
+.port_menu li:hover{background:lightgreen; }
+.port_menu li a:hover{
+  color: white;
+}
+
+.active{ background: lightgreen; }
+
+.active a{ color: white!important; }
+
+
+.part
+{ 
+position: relative;
+width: calc(25% - 20px);
+height: 250px; 
+background: grey;
+margin-top: 20px;
+}
+
+
+.part img{ 
+width: 100%; 
+height: 100%; 
+position: absolute; 
+left: 0; top: 0; 
+}
+
+.upper{ 
+position: absolute; 
+height: 80%; 
+top: 0; 
+width: 100%; 
+background: rgba(0, 0, 0, 0.6); 
+transition: 0.7s; 
+opacity: 0; 
+text-align: center; 
+line-height: 200px; 
+color: white; 
+font-size: 36px; 
+}
+
+.lower{ 
+  position: absolute; 
+  bottom: 0; 
+  height: 20%; 
+  background: firebrick; 
+  color: white; 
+  text-align: center; 
+  width: 100%; 
+  line-height: 50px; 
+}
+
+
+.part:hover .upper{ opacity: 1; }
+
+/*----------------------------------------team-----------------------------------------------*/
+
+#team{ padding: 50px 0; 
+  }
+
+.text_muted{ color: darkgray; 
+  margin: 25px 0; 
+  text-align: center; 
+}
+
+.green_block{ padding: 5px; 
+  background: lightgreen; 
+  margin-top: 50px; 
+  color: darkgrey; 
+}
+
+.customer_pic{ width: calc(40% - 15px); 
+  padding: 20px; 
+  position: relative; }
+
+.img_circle{ position: absolute; 
+  top: -100px; 
+  padding: 5px; 
+  width: 150px; 
+  height: 150px; 
+  right: 50px; 
+  border-radius: 50%; 
+  background: lightgreen; 
+}
+
+.img_circle img{ width: 100%; 
+  height: 100%; 
+}
+
+.customer_info{ width: calc(60% - 15px); 
+  color: white; 
+  padding: 20px; 
+}
+
+#team .head_text{ color: #333!important; }
+
+.team_member
+{ 
+  width: calc(25% - 10px);
+  height: 300px;
+  position: relative; 
+  margin-top: 10px;     
+}
+
+.team_member img
+{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+ .team_member .upper{ line-height: 240px; 
+  font-size: 24px; }
+
+ .team_member .upper i{ margin: 0 10px; }
+
+.team_member:hover .upper{ opacity: 1; }
+
+.green{ background: lightgreen; 
+  line-height: 30px;  
+}
+
+.green h3, .green p{ color:rgba(0, 0, 0, .8); }
+
+
+/*----------------------------------------------------------------------------*/
+
+.parallex{ width: 100%; 
+  background: url(pics/parallex.webp); 
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;   
+}
+
+.cover{ width: 100%; 
+  height: 100%; 
+  background: rgba(0, 0, 0, 0.6); 
+  display: flex; 
+  justify-content: center;  
+}
+
+/*--------------------------------------------------------------------*/
+
+#service{ padding: 50px;
+/*background: red;*/
+ }
+
+#service .head_text{ color: #333; }
+
+.service_part
+{ 
+  width: calc(33% - 15px); 
+  text-align: center;
+  margin-top: 10px;
+}
+
+.service_part i{ font-size: 48px; 
+  color: grey; 
+  margin: 20px 0;
+}
+
+.service h3
+{
+ color: #333; 
+ text-transform: uppercase; 
+ margin: 15px 0;
+}
+
+.service_part p{ color: lightgrey; 
+  line-height: 1.5; 
+}
+
+/*---------------------------------------------------*/
+
+.grey{ padding: 50px; 
+  background: grey; 
+  text-align: center; 
+  color: white; 
+  font-size: 35px; 
+}
+
+/*-----------------------------------------------------------*/
+
+#contact{ padding: 50px;
+}
+#contact .head_text{ color: #333!important; }
+
+#contact .container .contact_part{ width: calc(50% - 20px); 
+  padding: 20px;; 
+}
+
+.head{ color: black; }
+
+.con_para{ color: #333; }
+
+#contact span{ color: grey; }
+
+#contact i{ color: grey; 
+  font-size: 20px;  
+  margin-left: 10px;}
+
+#contact input{ height: 80px; 
+  border: none; 
+  outline: none; 
+  border-bottom: 1px solid lightgrey; 
+  width: 100%; 
+}
+
+#contact button{ border: none; 
+  outline: none; 
+  background: red; 
+  border-radius: 10px; 
+  color: white; 
+  margin-top: 20px; 
+  padding: 15px 30px;
+  cursor: pointer;
+}
+/*-------------------------------media--query---------------------------*/
+
+@media(max-width: 990px)
+{
+  .ulist li{ padding: 15px 10px; font-size: 14px!important; }
+  #portfolio .port_menu li{ font-size: 16px!important; }
+
+  .part, .team_member, .service_part { width:calc(50% - 15px); }
+
+  #contact .container .contact_part{ width: 100%; }
+}
+/*-------------------------------------------------------------------------------*/
+
+@media(max-width: 768px)
+{
+  .container 
+  {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  #portfolio .port_menu li{ font-size: 14px; }
+
+  .right,.left{ width: 100%!important; }
+
+
+
+/*----------------------------------------------------------------------------------------*/
+
+@media(max-width: 600px)
+{
+  .lab{ 
+      display: block;
+      position: fixed;
+      right: 20px;
+      top: 25px; 
+      }
+  .ulist
+   { 
+    position: fixed; 
+    top: 90px;
+    width: 100%;
+    left: -100%;
+    transition: 1s; 
+   }
+  .ulist li 
+    {
+          display: block;
+          width: 100%;
+          background: rgba(0,0,0,0.6);
+          text-align: center;
+    }
+
+#chk:checked ~ .ulist
+  {
+      left: 0;
+  }
+
+  .part { width: 100%; }
